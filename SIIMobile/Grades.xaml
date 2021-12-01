@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chips="clr-namespace:Xamarin.Forms.Chips;assembly=Xamarin.Forms.Chips"
+             xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
+             x:Class="SIIMobile.Grades"
+             Title="Calificaciones">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainLayout" >
+            <Label x:Name="SelectedSemester" Text="Semestre" HorizontalOptions="Center" Margin="10"/>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout x:Name="ChipGroup" Orientation="Horizontal"/>
+            </ScrollView>
+            <StackLayout x:Name="GradesLayout"/>
+            <!--<renderedViews:HorizontalListView x:Name="SemestersCarousel">
+                <renderedViews:HorizontalListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Button Text="{Binding .}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </renderedViews:HorizontalListView.ItemTemplate>
+            </renderedViews:HorizontalListView>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

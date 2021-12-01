@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336407596012",
+    "project_id": "siimobile",
+    "storage_bucket": "siimobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336407596012:android:dbe64d2cd24f6b8a050ec9",
+        "android_client_info": {
+          "package_name": "com.companyname.siimobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336407596012-kon1ic1bm3o0c7ccsaacnll3jjkbce2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeTqp5bK_eu8SoxjsERJfz9yFQHD1of_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336407596012-kon1ic1bm3o0c7ccsaacnll3jjkbce2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIIMobile.Profile"
+             Title="Perfil">
+    <ContentPage.Content>
+        <StackLayout Margin="0,20,0,0">
+            <Frame BackgroundColor="Blue" CornerRadius="15" HasShadow="True" Margin="10" Padding="25">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout>
+                        <Label
+                            x:Name="StudentName"
+                            FontSize="20"
+                            TextColor="White"/>
+                        <Label
+                            x:Name="Career"/>
+                        <Label
+                            x:Name="ControlNumber"/>
+                        <Label
+                            x:Name="Specialty"/>
+                    </StackLayout>
+                    <Frame VerticalOptions="Center" BackgroundColor="Transparent" CornerRadius="50" HeightRequest="80">
+                        <Image x:Name="ProfileImg" HeightRequest="80"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Blue" CornerRadius="15" HasShadow="True" Margin="10" Padding="20" HeightRequest="500">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HeightRequest="80" HorizontalOptions="Center" Margin="20">
+                        <Button x:Name="Grades" BackgroundColor="DarkBlue" Text="Calificaciones" WidthRequest="125" FontSize="10" CornerRadius="20" Margin="0,0,25,0" Clicked="Grades_Clicked"/>
+                        <Button x:Name="Schedule" BackgroundColor="DarkBlue" Text="Horario" WidthRequest="125" FontSize="10" CornerRadius="20" Clicked="Schedule_Clicked"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HeightRequest="80" HorizontalOptions="Center" Margin="20">
+                        <Button x:Name="SocialService" BackgroundColor="DarkBlue" Text="Servicio Social" WidthRequest="125" FontSize="10" CornerRadius="20" Margin="0,0,25,0" Clicked="SocialService_Clicked"/>
+                        <Button x:Name="ProfessionalResidence" BackgroundColor="DarkBlue" Text="Residencia Profesional" WidthRequest="125" FontSize="10" CornerRadius="20" Clicked="ProfessionalResidence_Clicked"/>
+                    </StackLayout>
+                    <Button x:Name="Progress" Margin="20" BackgroundColor="DarkBlue" HeightRequest="80" HorizontalOptions="Center" WidthRequest="125" Text="Avance Reticular" FontSize="10" CornerRadius="20" Clicked="Progress_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

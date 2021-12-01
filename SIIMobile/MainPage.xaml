@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIIMobile.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout>
+        
+        <Label Text="SII Mobile" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="36" Margin="0,20,0,0"/>
+        
+        <Label Text="LOGIN" FontSize="Medium" HorizontalOptions="Center"/>
+        <Image x:Name="InitLogo" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100"/>
+        <StackLayout Margin="20">
+            <Entry Placeholder="Correo institucional" Keyboard="Email" x:Name="mail" Text="L17430048@piedrasnegras.tecnm.mx"/>
+            <Entry Placeholder="NIP" IsPassword="True" Keyboard="Text" x:Name="password" Text="siimobile"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20">
+            <CheckBox VerticalOptions="Center" Color="DarkBlue"/>
+            <Label Text="Mantener sesión iniciada" VerticalOptions="Center"/>
+        </StackLayout>
+        <Button x:Name="Continuar" Text="CONTINUAR" Margin="20" Clicked="Continuar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

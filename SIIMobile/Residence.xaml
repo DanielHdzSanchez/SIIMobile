@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIIMobile.Residence"
+             Title="Residencia Profesional">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="DarkBlue" CornerRadius="0">
+                <Label Text="En proceso" TextColor="White"/>
+            </Frame>
+            <StackLayout>
+                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
+                    <Label Text="DEPENDENCIA"/>
+                </Frame>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Empresa" TextColor="DarkBlue"/>
+                    <Label x:Name="Empresa" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Proyecto" TextColor="DarkBlue"/>
+                    <Label x:Name="Proyecto" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Asesor externo" TextColor="DarkBlue"/>
+                    <Label x:Name="Externo" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
+                    <Label Text="RESIDENTE"/>
+                </Frame>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Reportes" TextColor="DarkBlue"/>
+                    <Label x:Name="Reportes" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Fecha de inicio" TextColor="DarkBlue"/>
+                    <Label x:Name="Inicio" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Fecha de finalización" TextColor="DarkBlue"/>
+                    <Label x:Name="Fin" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="Calificación acumulada" TextColor="DarkBlue"/>
+                    <Label x:Name="Calificacion" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

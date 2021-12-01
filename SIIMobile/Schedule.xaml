@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:chips="clr-namespace:Xamarin.Forms.Chips;assembly=Xamarin.Forms.Chips"
+             x:Class="SIIMobile.Schedule"
+             Title="Horario">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="Buttons" Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+                <Button Margin="2" Text="LUN" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+                <Button Margin="2" Text="MAR" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="MIE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="JUE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="VIE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+            </StackLayout>
+            <Frame Margin="5" CornerRadius="15" BackgroundColor="CadetBlue" HeightRequest="800">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout x:Name="Cards"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

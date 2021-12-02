@@ -47,7 +47,8 @@ namespace SIIMobile
                 chip.Margin = 5;
                 chip.CornerRadius = 10;
                 chip.WidthRequest = 40;
-                chip.BackgroundColor = Color.Gray;
+                chip.TextColor = Color.White;
+                chip.BackgroundColor = Color.Blue;
                 chip.Clicked += async (sender, args) => await GetGradesAsync(chip.Text);
                 ChipGroup.Children.Add(chip);
             }
@@ -80,9 +81,12 @@ namespace SIIMobile
                 Label name = new Label();
                 name.HorizontalOptions = LayoutOptions.Start;
                 name.Text = s;
+                name.TextColor = Color.White;
                 Label g = new Label();
                 g.HorizontalOptions = LayoutOptions.EndAndExpand;
                 g.Text = grades[ix];
+                g.TextColor = Color.White;
+                g.FontAttributes = FontAttributes.Bold;
                 stack.Children.Add(name);
                 stack.Children.Add(g);
                 frame.Content = stack;

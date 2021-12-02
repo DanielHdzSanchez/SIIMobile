@@ -1,29 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SIIMobile.Feed">
+             x:Class="SIIMobile.Feed"
+             NavigationPage.HasBackButton="False">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
             <Label Text="SII Mobile" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="20" TextColor="White"/>
-            <ImageButton x:Name="UserIcon" Margin="0,0,5,0" HeightRequest="50" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" CornerRadius="50" Clicked="GoToProfile"/>
+            <ImageButton x:Name="UserIcon" Margin="0,0,5,0" HeightRequest="40" VerticalOptions="Center" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" Clicked="GoToProfile"/>
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
-            <!--<StackLayout Orientation="Horizontal" Margin="20">
-                <ImageButton x:Name="Back" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent" Clicked="Back_Clicked"/>
-                <ImageButton x:Name="MainIcon" HeightRequest="50" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent"/>
-                <ImageButton x:Name="UserIcon" HeightRequest="50" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" CornerRadius="50" Clicked="GoToProfile"/>
-            </StackLayout>-->
-            <Frame BackgroundColor="Blue" Margin="20" CornerRadius="10">
-                <StackLayout>
-                    <StackLayout>
-                        <Label Text="Name"/>
-                    </StackLayout>
-                    <Label Text="Lorem ipsum"/>
-                    <Image HeightRequest="150"/>
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout x:Name="MainLayout"/>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

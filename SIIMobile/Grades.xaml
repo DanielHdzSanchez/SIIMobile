@@ -7,8 +7,8 @@
              Title="Calificaciones">
     <ContentPage.Content>
         <StackLayout x:Name="MainLayout" >
-            <Label x:Name="SelectedSemester" Text="Semestre" HorizontalOptions="Center" Margin="10"/>
-            <ScrollView Orientation="Horizontal">
+            <Label x:Name="SelectedSemester" FontSize="20" TextColor="DarkBlue" Text="Semestre" HorizontalOptions="Center" Margin="10"/>
+            <ScrollView Orientation="Horizontal" Margin="20,0,20,5">
                 <StackLayout x:Name="ChipGroup" Orientation="Horizontal"/>
             </ScrollView>
             <StackLayout x:Name="GradesLayout"/>

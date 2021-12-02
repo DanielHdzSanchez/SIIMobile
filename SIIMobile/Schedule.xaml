@@ -6,13 +6,13 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout x:Name="Buttons" Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
-                <Button Margin="2" Text="LUN" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
-                <Button Margin="2" Text="MAR" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
-                <Button Text="MIE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
-                <Button Text="JUE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
-                <Button Text="VIE" Margin="2" BackgroundColor="Gray" CornerRadius="10" WidthRequest="60"/>
+                <Button Margin="2" Text="LUN" TextColor="White" BackgroundColor="Blue" CornerRadius="10" WidthRequest="60"/>
+                <Button Margin="2" Text="MAR" TextColor="White" BackgroundColor="Blue" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="MIE" Margin="2" TextColor="White" BackgroundColor="Blue" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="JUE" Margin="2" TextColor="White" BackgroundColor="Blue" CornerRadius="10" WidthRequest="60"/>
+                <Button Text="VIE" Margin="2" TextColor="White" BackgroundColor="Blue" CornerRadius="10" WidthRequest="60"/>
             </StackLayout>
-            <Frame Margin="5" CornerRadius="15" BackgroundColor="CadetBlue" HeightRequest="800">
+            <Frame Margin="5" CornerRadius="15" BackgroundColor="DarkBlue" HeightRequest="800">
                 <StackLayout Orientation="Vertical">
                     <StackLayout x:Name="Cards"/>
                 </StackLayout>

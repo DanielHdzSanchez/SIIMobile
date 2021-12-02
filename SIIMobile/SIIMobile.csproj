@@ -14,12 +14,14 @@
     <None Remove="Assets\imgs\back.png" />
     <None Remove="Assets\imgs\itpn.png" />
     <None Remove="Assets\imgs\pikachu.png" />
+    <None Remove="Assets\imgs\user.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\imgs\back.png" />
     <EmbeddedResource Include="Assets\imgs\itpn.png" />
     <EmbeddedResource Include="Assets\imgs\pikachu.png" />
+    <EmbeddedResource Include="Assets\imgs\user.png" />
   </ItemGroup>
 
   <ItemGroup>

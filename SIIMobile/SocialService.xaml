@@ -5,12 +5,12 @@
              Title="Servicio Social">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="DarkBlue" CornerRadius="0">
-                <Label x:Name="Progreso" TextColor="White"/>
+            <Frame BackgroundColor="DarkBlue" CornerRadius="0" Margin="0,5,0,0">
+                <Label x:Name="Progreso" TextColor="White" HorizontalOptions="Center"/>
             </Frame>
             <StackLayout>
-                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
-                    <Label Text="DEPENDENCIA"/>
+                <Frame BackgroundColor="DarkBlue" CornerRadius="0">
+                    <Label Text="DEPENDENCIA" TextColor="White"/>
                 </Frame>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Dependencia" TextColor="DarkBlue"/>
@@ -24,12 +24,12 @@
                     <Label Text="Responsable" TextColor="DarkBlue"/>
                     <Label x:Name="Responsable" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
                 </StackLayout>
-                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
-                    <Label Text="PRESTADOR DEL SERVICIO SOCIAL"/>
+                <Frame BackgroundColor="DarkBlue" CornerRadius="0">
+                    <Label Text="PRESTADOR DEL SERVICIO SOCIAL" TextColor="White"/>
                 </Frame>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Horas acumuladas" TextColor="DarkBlue"/>
-                    <Label x:Name="HorasAcumuladas" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
+                    <Label x:Name="HorasAcumuladas" HorizontalOptions="EndAndExpand"  TextColor="DarkBlue"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Reportes entregados" TextColor="DarkBlue"/>

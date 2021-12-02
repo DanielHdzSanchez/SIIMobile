@@ -5,12 +5,12 @@
              Title="Residencia Profesional">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="DarkBlue" CornerRadius="0">
-                <Label Text="En proceso" TextColor="White"/>
+            <Frame BackgroundColor="DarkBlue" CornerRadius="0" Margin="0,5,0,0">
+                <Label Text="En proceso" TextColor="White" HorizontalOptions="Center"/>
             </Frame>
             <StackLayout>
-                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
-                    <Label Text="DEPENDENCIA"/>
+                <Frame BackgroundColor="DarkBlue" CornerRadius="0">
+                    <Label Text="DEPENDENCIA" TextColor="White"/>
                 </Frame>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Empresa" TextColor="DarkBlue"/>
@@ -24,8 +24,8 @@
                     <Label Text="Asesor externo" TextColor="DarkBlue"/>
                     <Label x:Name="Externo" HorizontalOptions="EndAndExpand" TextColor="DarkBlue"/>
                 </StackLayout>
-                <Frame BackgroundColor="DarkCyan" CornerRadius="0">
-                    <Label Text="RESIDENTE"/>
+                <Frame BackgroundColor="DarkBlue" CornerRadius="0">
+                    <Label Text="RESIDENTE" TextColor="White"/>
                 </Frame>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Reportes" TextColor="DarkBlue"/>

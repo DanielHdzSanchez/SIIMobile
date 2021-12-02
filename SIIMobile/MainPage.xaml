@@ -6,19 +6,19 @@
     
     <StackLayout>
         
-        <Label Text="SII Mobile" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="36" Margin="0,20,0,0"/>
-        
-        <Label Text="LOGIN" FontSize="Medium" HorizontalOptions="Center"/>
-        <Image x:Name="InitLogo" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100"/>
+        <Label Text="SII Mobile" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="40" Margin="0,20,0,0"/>
+
+        <Label Text="LOGIN" Margin="0,10,0,0" FontSize="Medium" HorizontalOptions="Center" TextColor="Black"/>
+        <Image x:Name="InitLogo" Margin="0,10,0,0" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100"/>
         <StackLayout Margin="20">
-            <Entry Placeholder="Correo institucional" Keyboard="Email" x:Name="mail" Text="L17430048@piedrasnegras.tecnm.mx"/>
-            <Entry Placeholder="NIP" IsPassword="True" Keyboard="Text" x:Name="password" Text="siimobile"/>
+            <Entry Placeholder="Correo institucional" Keyboard="Email" x:Name="mail" Text=""/>
+            <Entry Placeholder="Contraseña" IsPassword="True" Keyboard="Text" x:Name="password" Text=""/><!--siimobile-->
         </StackLayout>
         <StackLayout Orientation="Horizontal" Margin="20">
-            <CheckBox VerticalOptions="Center" Color="DarkBlue"/>
-            <Label Text="Mantener sesión iniciada" VerticalOptions="Center"/>
+            <CheckBox x:Name="Remember" VerticalOptions="Center" Color="DarkBlue"/>
+            <Label Text="Mantener sesión iniciada" VerticalOptions="Center" TextColor="Black"/>
         </StackLayout>
-        <Button x:Name="Continuar" Text="CONTINUAR" Margin="20" Clicked="Continuar_Clicked"/>
+        <Button x:Name="Continuar" Text="CONTINUAR" Margin="20" Clicked="Sign" BackgroundColor="DarkBlue" TextColor="White" CornerRadius="10"/>
     </StackLayout>
 
 </ContentPage>

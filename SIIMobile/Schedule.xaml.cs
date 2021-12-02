@@ -48,16 +48,18 @@ namespace SIIMobile
             {
                 Frame frame = new Frame();
                 frame.Margin = 10;
-                frame.BackgroundColor = Color.DarkBlue;
+                frame.BackgroundColor = Color.Blue;
                 frame.CornerRadius = 15;
                 StackLayout stack = new StackLayout();
                 stack.Orientation = StackOrientation.Horizontal;
                 Label details = new Label();
                 details.HorizontalOptions = LayoutOptions.Start;
                 details.Text = $"{aulas[ix]} {horas[ix]}";
+                details.TextColor = Color.White;
                 Label subject = new Label();
                 subject.HorizontalOptions = LayoutOptions.EndAndExpand;
                 subject.Text = materias[ix];
+                subject.TextColor = Color.White;
                 stack.Children.Add(details);
                 stack.Children.Add(subject);
                 frame.Content = stack;

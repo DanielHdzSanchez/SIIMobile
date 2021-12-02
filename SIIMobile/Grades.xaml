@@ -12,15 +12,6 @@
                 <StackLayout x:Name="ChipGroup" Orientation="Horizontal"/>
             </ScrollView>
             <StackLayout x:Name="GradesLayout"/>
-            <!--<renderedViews:HorizontalListView x:Name="SemestersCarousel">
-                <renderedViews:HorizontalListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Button Text="{Binding .}"/>
-                        </ViewCell>
-                    </DataTemplate>
-                </renderedViews:HorizontalListView.ItemTemplate>
-            </renderedViews:HorizontalListView>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

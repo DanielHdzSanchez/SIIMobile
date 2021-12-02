@@ -11,7 +11,7 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
-            <StackLayout x:Name="MainLayout"/>
+            <StackLayout x:Name="MainLayout" Orientation="Vertical"/>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

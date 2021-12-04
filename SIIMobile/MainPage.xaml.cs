@@ -32,7 +32,7 @@ namespace SIIMobile
                 string[] session = File.ReadAllText(fileName).ToString().Split(',');
                 _ = await CrossFirebaseAuth.Current.Instance.SignInWithEmailAndPasswordAsync(session[0], session[1]);
                 await Navigation.PushAsync(new Feed());
-                Navigation.RemovePage(this);
+                //Navigation.RemovePage(this);
             }
         }
 
@@ -46,7 +46,7 @@ namespace SIIMobile
                     File.WriteAllText(fileName, $"{mail.Text},{password.Text}");
                 }
                 await Navigation.PushAsync(new Feed());
-                Navigation.RemovePage(this);
+                //Navigation.RemovePage(this);
                 mail.Text = "";
                 password.Text = "";
             }

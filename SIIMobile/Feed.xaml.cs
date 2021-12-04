@@ -22,6 +22,12 @@ namespace SIIMobile
             _ = GetNews();
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            //return base.OnBackButtonPressed();
+            return System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+        }
+
         async Task GetNews()
         {
             var query = await CrossCloudFirestore.Current

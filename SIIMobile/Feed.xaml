@@ -10,8 +10,26 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <ScrollView Orientation="Vertical">
+        <!--<ScrollView Orientation="Vertical">
             <StackLayout x:Name="MainLayout" Orientation="Vertical"/>
-        </ScrollView>
+        </ScrollView>-->
+
+        <ListView x:Name="Ads" HasUnevenRows="True" SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="DarkBlue" Margin="10" CornerRadius="10">
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding title}" TextColor="White" FontAttributes="Bold"/>
+                                    <Label Text="{Binding date}" TextColor="White" FontSize="10" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="{Binding body}" TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

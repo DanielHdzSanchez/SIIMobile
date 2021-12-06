@@ -13,6 +13,8 @@ namespace SIIMobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Feed : ContentPage
     {
+        List<Ad> news = new List<Ad>();
+
         public Feed()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace SIIMobile
             //MainIcon.Source = ImageSource.FromResource("SIIMobile.Assets.imgs.itpn.png");
             UserIcon.Source = ImageSource.FromResource("SIIMobile.Assets.imgs.user.png");
             _ = GetNews();
+
         }
 
         protected override bool OnBackButtonPressed()
@@ -36,33 +39,14 @@ namespace SIIMobile
                 .GetAsync();
             foreach (IDocumentSnapshot doc in query.Documents)
             {
-                Frame frame = new Frame();
-                frame.BackgroundColor = Color.DarkBlue;
-                frame.Margin = 15;
-                frame.CornerRadius = 10;
-                StackLayout stack1 = new StackLayout();
-                StackLayout stack2 = new StackLayout();
-                stack2.Orientation = StackOrientation.Horizontal;
-                Label title = new Label();
-                title.Text = doc.Data["title"].ToString();
-                title.TextColor = Color.White;
-                title.FontSize = 20;
-                Label date = new Label();
-                date.Text = doc.Data["date"].ToString();
-                date.TextColor = Color.White;
-                date.FontSize = 12;
-                date.VerticalOptions = LayoutOptions.Center;
-                date.HorizontalOptions = LayoutOptions.EndAndExpand;
-                Label body = new Label();
-                body.Text = doc.Data["body"].ToString();
-                body.TextColor = Color.White;
-                stack2.Children.Add(title);
-                stack2.Children.Add(date);
-                stack1.Children.Add(stack2);
-                stack1.Children.Add(body);
-                frame.Content = stack1;
-                MainLayout.Children.Add(frame);
+                news.Add(new Ad {
+                    title = doc.Data["title"].ToString(),
+                    date = doc.Data["date"].ToString(),
+                    body = doc.Data["body"].ToString()
+                });
+
             }
+            Ads.ItemsSource = news;
         }
 
         async private void GoToProfile(object sender, EventArgs e)
